@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Barlow', sans-serif;
+    --orange: #FC7450;
+    --dark-purple: #3C1A5E;
+    --purple: #62457D;
+    --gray: #97A0A5;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+h1,
+.h1 {
+    font-size: 72px;
+    line-height: 1.2;
+    color: var(--dark-purple);
+}
+
+h2,
+.h2 {
+    font-size: 54px;
+    line-height: 1.6;
+}
+
+h3,
+.h3 {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+.arrow_button {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    padding-right: 55px;
+}
+
+.arrow_button:hover {
+    color: var(--orange) !important;
+}
+
+.arrow_button span {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: var(--orange);
+    border-radius: 100%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition: all .4s ease-in-out;
+}
+
+.arrow_button span::before {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-7px, -5px) rotate(-45deg)
+}
+
+.arrow_button:hover span {
+    transform: translateY(-50%) translateX(5px);
+}
+
+.orange_button {
+    min-width: 244px;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 19px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.orange_button:hover {
+    background-color: #f5542a;
+}
+
+@media screen and (max-width:768px) {
+
+    h1,
+    .h1 {
+        font-size: 55px
+    }
+
+    h2,
+    .h2 {
+        font-size: 40px;
+    }
+
+    h3,
+    .h3 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    h1,
+    .h1 {
+        font-size: 40px
+    }
+
+    h2,
+    .h2 {
+        font-size: 32px;
+    }
+
+    h3,
+    .h3 {
+        font-size: 25px;
+    }
+}
