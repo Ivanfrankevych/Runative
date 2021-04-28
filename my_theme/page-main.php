@@ -2,7 +2,7 @@
 <?php get_header() ?>
 <main>
    asfdhjkasfdhjsadf
-   assasasa
+   assasa
     <section class="home_banner bg_banner" style="background-image: url(<?php echo esc_url( get_field( 'home_bg_1', 'option' )['url'] ); ?>)">
         <div class="container">
             <h1 data-aos="fade-down"><?php the_field( 'banner_heading' ); ?></h1>
